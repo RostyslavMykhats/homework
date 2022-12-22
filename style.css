@@ -1,21 +1,38 @@
-main{
+main {
+    animation-duration: 3s;
+    animation-name: slidein;
     display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-family: cursive;
 }
 
-.one{
+.one {
     width: 400px;
     margin: 20px;
-    background-color: aqua;
+    background-color: rgba(112, 194, 6, 0.664);
 }
 
-img{
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+
+img {
     object-fit: cover;
     width: 400px;
 }
 
-p{
+p {
     white-space: pre-wrap;
 }
