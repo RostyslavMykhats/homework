@@ -6,6 +6,7 @@ main {
     flex-direction: row;
     justify-content: center;
     font-family: cursive;
+    white-space: pre-wrap;
 }
 
 .one {
@@ -31,8 +32,4 @@ main {
 img {
     object-fit: cover;
     width: 400px;
-}
-
-p {
-    white-space: pre-wrap;
 }
