@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .log {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    max-width: 60px;
+    margin-right: 252.54px;
+    object-fit: contain;
+}
+
+header .container .log .logotext {
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #545BE8;
+    margin-left: 8.74px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav li {
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 40px;
+}
+
+.actions {
+    display: flex;
+    gap: 24px;
+
+}
+
+.actions button {
+    min-width: 170px;
+    height: 48px;
+}
+
+#login-btn {
+    background-color: white;
+    color: #545BE8;
+    border: 1px solid #545BE8;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+#reg-btn {
+    background-color: #545BE8;
+    color: white;
+    border: 1px solid #545BE8;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section{
+
+
+}
+
+section .info {
+    background-image: url("img/background.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(100vh - 545px);
+    max-height: calc(100vh - 545px);
+    padding-left: 150px;
+    padding-top: 106px;
+    background-color: #F5F5F5;
+    display: block;
+    flex-direction: column;
+
+}
+
+.blue-text {
+    color: #545BE8;
+}
+
+.grey-text {
+    color: #969696;
+}
+
+section .btn-info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+
+
+.reg-btn-info {
+    background-color: #545BE8;
+    color: white;
+    border: 1px solid #545BE8;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    min-width: 170px;
+    height: 48px;
+}
+
+.play-btn {
+    padding-left: 42.25px;
+    min-width: 170px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+section h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+section h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+section .grey-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(font/Inter-V.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Medium.ttf);
+}
