@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Mada:200,300,regular,500,600,700,900);
+
 body {
     margin: 0;
 }
@@ -172,7 +174,7 @@ section .grey-text {
 }
 
 .about-us {
-    max-height: 522px;
+    min-height: 522px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -195,6 +197,7 @@ section .grey-text {
 }
 
 .what-baner {
+    min-height: 505px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -208,6 +211,7 @@ section .grey-text {
 }
 
 .baner {
+    position: relative;
     height: 267px;
     margin-right: 40px;
     display: flex;
@@ -217,6 +221,12 @@ section .grey-text {
     border-radius: 10px;
     min-width: 267px;
 
+}
+
+.baner .man {
+    position: absolute;
+    top: 35px;
+    left: 29px;
 }
 
 .text-baner {
@@ -243,6 +253,371 @@ section .grey-text {
 .img-baner {
     max-width: 48px;
     padding-left: 16px;
+}
+
+.course {
+    display: flex;
+    flex-direction: row;
+    min-height: 643px;
+    background: linear-gradient(180deg, #545BE8 0%, #272DB0 100%);
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.course .course-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    white-space: pre-wrap;
+    margin-left: 125px;
+}
+
+.course .orange-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F0C932;
+}
+
+.course .white-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.course .dd-text {
+    font-family: 'Poppins1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #DDDDDD;
+}
+
+.quantity-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.numbers-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.numbers-info .number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F0C932;
+}
+
+.numbers-info .quantity-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #DDDDDD;
+}
+
+.background-course {
+    max-width: 558px;
+    max-height: 557px;
+}
+
+.available {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 1333px;
+}
+
+.testi {
+    font-family: 'Mada';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.fedback {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.friskidia {
+    margin: 24px;
+    position: relative;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    max-height: 268px;
+    max-width: 588px;
+}
+
+.friskidia .fris {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.friskidia .fris .name-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.name2 {
+    font-family: 'Poppins1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #969696;
+}
+
+.logo-user {
+    padding-right: 16px;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.stars {
+    padding-left: 40px;
+}
+
+.comant {
+    padding-left: 40px;
+    font-family: 'Poppins1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #646464
+}
+
+.vector {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.info-best-course {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.best-course {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.course-baner {
+    margin: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 18.0585px 18.0585px rgba(0, 0, 0, 0.05);
+}
+
+.icon-bst {
+    position: absolute;
+    left: 0px;
+    top: 22px;
+    display: flex;
+    background-color: #545BE8;
+    width: 123.45px;
+    min-height: 43.25px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.2527px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.cost {
+    position: absolute;
+    top: 185px;
+    right: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.6702px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.text-course-baner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 14px;
+}
+
+.name-course {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.6702px;
+    line-height: 33px;
+    color: #141E32;
+}
+
+.info-course-text {
+    font-family: 'Poppins1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.2527px;
+    line-height: 24px;
+    color: #969696;
+    padding-left: 14px;
+}
+
+.teacher {
+    padding-left: 10px;
+}
+
+.views {
+    position: absolute;
+    right: 14px;
+    font-family: 'Poppins1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.641px;
+    line-height: 19px;
+    color: #545BE8;
+}
+
+.see-all {
+    background-color: #545BE8;
+    color: white;
+    border: 1px solid #545BE8;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    width: 170px;
+    height: 48px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #393E46;
+    min-height: 400px;
+}
+
+.logo-info-name {
+    padding-right: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.info-footer {
+    font-family: 'Poppins1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F4F4F4;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.social img {
+    margin: 16px;
+}
+
+
+.log {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    max-width: 60px;
+    padding-right: 252.54px;
+    object-fit: contain;
+
+}
+
+.logotext {
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 8.74px;
+}
+
+.table-foot {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-foot {
+    padding-left: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-foot li {
+    padding-top: 11px;
+    font-family: 'Poppins1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F4F4F4;
 }
 
 @font-face {
