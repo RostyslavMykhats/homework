@@ -19,17 +19,7 @@ header {
     display: flex;
     flex-direction: row;
     height: 100%;
-    justify-content: space-between;
     align-items: center;
-}
-
-header .container .log {
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;
-    max-width: 60px;
-    padding-right: 252.54px;
-    object-fit: contain;
 }
 
 header .container .log .logotext {
@@ -174,6 +164,7 @@ section .grey-text {
 }
 
 .about-us {
+    position: relative;
     min-height: 522px;
     flex-wrap: wrap;
     display: flex;
@@ -181,6 +172,24 @@ section .grey-text {
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+.back {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.next {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.btn-next-back {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 70px;
+    right: 200px;
 }
 
 #blue-text {
@@ -197,10 +206,11 @@ section .grey-text {
 }
 
 .what-baner {
+    position: relative;
     min-height: 505px;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -220,7 +230,6 @@ section .grey-text {
     background: #545BE8;
     border-radius: 10px;
     min-width: 267px;
-
 }
 
 .baner .man {
@@ -246,8 +255,14 @@ section .grey-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-
     color: #DDDDDD;
+}
+
+.btn-baner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .img-baner {
@@ -534,6 +549,7 @@ section .grey-text {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -594,6 +610,7 @@ footer {
 
 .table-foot {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 
 }

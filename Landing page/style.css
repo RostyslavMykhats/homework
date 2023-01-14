@@ -1,0 +1,465 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body {
+    margin: 0px;
+    background: #1E1E1E;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    width: 100%;
+    min-height: 105px;
+}
+
+.logo {
+    padding-right: 200px;
+    padding-left: 60px;
+    object-fit: contain;
+}
+
+header .head {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 91px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header .head li {
+    padding-left: 41px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.head li .headurl {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contact-now {
+    width: 172px;
+    height: 47px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #111111;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.page1 {
+    background-image: url(img/Group\ 10591.png);
+    background-repeat: no-repeat;
+    background-position: center right 190px;
+    background-size: auto;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #111111;
+}
+
+.page1 .info-pg1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.page1 .info-pg1 .white-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 91px;
+    color: #FFFFFF;
+}
+
+.page1 .info-pg1 .grey-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.52%;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.page1 .info-pg1 .actions {
+    position: relative;
+}
+
+.page1 .info-pg1 .actions .ipt-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 137px;
+    height: 72px;
+    background: #E3B748;
+    border-radius: 43px;
+    border: 0px solid #E3B748;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162.52%;
+    text-align: center;
+    color: #000000;
+}
+
+.page1 .info-pg1 .actions input {
+    background: url(img/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+    opacity: 1;
+    width: 438px;
+    height: 74px;
+    border-radius: 43px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162.52%;
+    padding-left: 43px;
+    color: #FFFFFF;
+    border: 1px solid;
+}
+
+::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162.52%;
+    padding-left: 21px;
+}
+
+.page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.page2 .info-pg2 .white-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 161.52%;
+    color: #FFFFFF;
+}
+
+.page2 .info-pg2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page2 .pg2-info .white-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 162.52%;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.vl {
+    min-width: 206px;
+    border: 1px solid #6A6A6A;
+    transform: rotate(90deg);
+}
+
+.page2 .pg2-info .grey-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.52%;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.page2 .white-text {
+    margin: 97px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 143.02%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.page2 .choose-baner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page2 .choose-baner .baner {
+    width: 359px;
+    height: 377px;
+    position: relative;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 267px;
+    background: #1D1D1D;
+    border: 1.4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+}
+
+.page2 .choose-baner .baner1 {
+    width: 359px;
+    height: 377px;
+    position: relative;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 267px;
+    background: #2E2E2E;
+    border: 1.4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+}
+
+.img-baner {
+    padding-left: 20px;
+    width: 101px;
+    height: 101px;
+}
+
+.text-baner {
+    padding-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.contant-baner {
+    padding-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 162.52%;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.btn-baner {
+    margin: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 162.52%;
+    color: #000000;
+    border: 0px solid;
+    width: 121px;
+    height: 43px;
+    background: #E3B748;
+    border-radius: 23.5px;
+}
+
+.page2 .photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .photo .sector1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .photo .sector1 img {
+    margin: 30px;
+}
+
+.sector1-1 {
+    width: 100%;
+}
+
+.sector1-2 {
+    width: 100%;
+}
+
+.text-sector1-1 {
+    position: absolute;
+    bottom: 20px;
+    left: 256px;
+    right: 256px;
+}
+
+.happy-clients {
+    margin: 200px;
+}
+
+.happy-clients .banner-happy {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.happy-clients .banner-happy .baner {
+    width: 359px;
+    height: 377px;
+    position: relative;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 267px;
+    background: #1D1D1D;
+    border: 1.4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+}
+
+.happy-clients .banner-happy .baner1 {
+    width: 359px;
+    height: 377px;
+    position: relative;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 267px;
+    background: #2E2E2E;
+    border: 1.4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+}
+
+.happy-clients .happy-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.happy-clients .happy-info .white-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 143.02%;
+    color: #FFFFFF;
+}
+
+.happy-clients .happy-info .happy-btn .back {
+    background-color: #00000000;
+    border: 0px solid;
+}
+
+.happy-clients .happy-info .happy-btn .next {
+    background-color: #00000000;
+    border: 0px solid;
+}
+
+.vector-baner-happy {
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    width: 55px;
+    height: 38px;
+}
+
+.our-team .white-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 143.02%;
+    color: #FFFFFF;
+}
+
+.our-team .team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 344px;
+    height: 109px;
+}
+
+.our-team .team .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.danial {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width:1280px) {
+    .page2 .info-pg2 {
+        flex-wrap: wrap;
+    }
+
+    .choose-baner {
+        flex-wrap: wrap;
+    }
+
+    .page2 .photo .sector1 {
+        flex-wrap: wrap;
+
+    }
+
+    .happy-clients .banner-happy {
+        flex-wrap: wrap;
+    }
+
+    .happy-clients .happy-info {
+        flex-wrap: wrap;
+    }
+
+
+}
