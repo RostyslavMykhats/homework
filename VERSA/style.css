@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+} 
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+header ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+a {
+    outline: none;
+    background-color: #ffffff;
+    text-decoration: none;
+}

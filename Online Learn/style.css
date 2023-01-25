@@ -501,5 +501,9 @@ footer {
         flex-wrap: wrap;
     }
 
+    footer {
+        justify-content: center;
+    }
+
 }
 
