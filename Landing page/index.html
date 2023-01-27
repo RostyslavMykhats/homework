@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
@@ -14,12 +15,16 @@
     <header>
       <img class="logo" src="img/logo.png" alt="logo">
       <nav class="head">
-        <ul>
-          <li><a class="head-url" href="">Home</a> </li>
-          <li> <a class="head-url" href="">Attorneys</a> </li>
-          <li> <a class="head-url" href="">Practice Areas</a> </li>
-          <li> <a class="head-url" href="">About Us</a> </li>
-        </ul>
+        <input type="checkbox" id="toggler" />
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+          <ul>
+            <li><a class="head-url" href="">Home</a> </li>
+            <li> <a class="head-url" href="">Attorneys</a> </li>
+            <li> <a class="head-url" href="">Practice Areas</a> </li>
+            <li> <a class="head-url" href="">About Us</a> </li>
+          </ul>
+        </div>
       </nav>
       <button class="contact-now">Contact Now</button>
     </header>

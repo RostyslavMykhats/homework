@@ -33,6 +33,7 @@ header .logo {
      object-fit: contain;
 }
 header .head {
+  padding-block: 15px;
   display: flex;
   flex-wrap: wrap;
   padding-right: 150px;
@@ -52,6 +53,11 @@ header .head li {
 header .head li .head-url {
   text-decoration: none;
   color: #FFFFFF;
+}
+header #toggler,
+header label {
+  padding-left: 46%;
+  display: none;
 }
 header .contact-now {
   margin: 30px;
@@ -807,5 +813,28 @@ footer .logo {
     padding-left: 0px;
     list-style-type: none;
     display: inline-block;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .head label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked ~ .menu {
+    max-height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
