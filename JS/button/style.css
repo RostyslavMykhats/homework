@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.block-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.parent-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+}
