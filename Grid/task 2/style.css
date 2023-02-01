@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "girl message-girl ." ". message-man man";
+}
+
+.girl {
+  grid-area: girl;
+}
+
+.man {
+  grid-area: man;
+}
+
+.message-girl {
+  grid-area: message-girl;
+}
+
+.message-man {
+  grid-area: message-man;
+}/*# sourceMappingURL=style.css.map */
