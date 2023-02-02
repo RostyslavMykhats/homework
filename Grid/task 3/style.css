@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  position: relative;
+  background-color: #1a8d89;
+}
+body header {
+  position: relative;
+  min-height: 70px;
+  width: 100%;
+  background-color: #1e7e7c;
+  background-size: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body header .logo {
+  position: fixed;
+  top: 25px;
+  margin-left: 3%;
+  color: white;
+  font-size: 18px;
+}
+body .wrapper {
+  height: 85vh;
+  margin-top: 2%;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+body .wrapper .board {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2%;
+  gap: 20px;
+  min-width: 400px;
+  background-color: rgb(221, 219, 219);
+}
+body .wrapper .board .name-board {
+  text-align: start;
+  margin-top: 2%;
+  font-size: 18px;
+  font-weight: 600;
+}
+body .wrapper .board .task {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  gap: 20px;
+  padding: 3%;
+}
+body .wrapper .board .task .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .wrapper .board .task .icons ul li {
+  display: inline;
+  margin-right: 10px;
+  list-style-type: none;
+  font-size: 18px;
+}
+body .wrapper .board .task .icons ul li img {
+  width: 18px;
+}
+body .wrapper .board .task .face {
+  width: 30px;
+}/*# sourceMappingURL=style.css.map */

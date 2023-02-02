@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: min-content;
+    position: relative;
+    background-color: #1a8d89;
+
+    header {
+        position: relative;
+        min-height: 70px;
+        width: 100%;
+        background-color: #1e7e7c;
+        background-size: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .logo {
+            position: fixed;
+            top: 25px;
+            margin-left: 3%;
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+    .wrapper {
+        height: 85vh;
+        margin-top: 2%;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        gap: 25px;
+
+        .board {
+            overflow: scroll;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2%;
+            gap: 20px;
+            min-width: 400px;
+            background-color: rgb(221, 219, 219);
+
+            .name-board {
+                text-align: start;
+                margin-top: 2%;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .task {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+                gap: 20px;
+                padding: 3%;
+                
+
+                .icons {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    ul {
+
+                        li {
+                            display: inline;
+                            margin-right: 10px;
+                            list-style-type: none;
+                            font-size: 18px;
+
+                            img {
+                                width: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .face {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
