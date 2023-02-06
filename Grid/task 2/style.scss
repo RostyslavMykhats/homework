@@ -1,26 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "girl message-girl ."
-        ". message-man man";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    .message-user1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60px;
+            width: 80%;
+            background-color: pink;
+            border-radius: 0px 10px 10px 10px;
+        
+            .text-message {
+                margin: 1%;
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .message-user2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60px;
+            width: 80%;
+            background-color: rgb(177, 217, 250);
+            border-radius: 10px 10px 0px 10px;
+        
+            .text-message {
+                margin: 1%;
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+
 }
 
-.girl {
-    grid-area: girl;
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .info-user {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        .name {
+            font-family: "Inter";
+            font-weight: 600;
+        }
+
+        .hour {
+            font-family: "Inter";
+            font-size: 10px;
+            font-weight: 300;
+            color: rgb(165, 165, 165);
+        }
+    }
 }
 
-.man {
-    grid-area: man;
-}
-
-.message-girl {
-    grid-area: message-girl;
-}
-
-.message-man {
-    grid-area: message-man;
-}
