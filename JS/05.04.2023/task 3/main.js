@@ -1,10 +1,10 @@
-let x = Number(prompt('Enter first number'));
-let y = Number(prompt('Enter second number'));
-let z = Number(prompt('Enter second number'));
+let firstNumber = Number(prompt('Enter first number'));
+let secondNumber = Number(prompt('Enter second number'));
+let thirdNumber = Number(prompt('Enter third number'));
 
 function numberToString(...params) {
-    if (x && y && z) {
-        alert(`${x}${y}${z}`);
+    if (firstNumber && secondNumber && thirdNumber) {
+        alert(`${firstNumber}${secondNumber}${thirdNumber}`);
     }
     else {
         alert('Invalid number');

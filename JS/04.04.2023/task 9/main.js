@@ -1,16 +1,16 @@
-function utu(...params) {
+function multiplication(...params) {
   let num = [];
   for (let index = 1; index <= 10; index++) {
     num.push(index);
   }
 
   for (let j = 2; j <= 9; j++) {
-    let hit = [];
+    let multiplier = [];
     for (let iterator of num) {
       iterator *= j;
-      hit.push(iterator);
+      multiplier.push(iterator);
     }
-    alert(hit);
+    alert(multiplier);
   }
 }
-utu();
+multiplication();

@@ -1,20 +1,20 @@
-let x = Number(prompt("Enter first number"));
-let y = Number(prompt("Enter second number"));
+let firstNumber = Number(prompt("Enter first number"));
+let secondNumber = Number(prompt("Enter second number"));
 
-function Array(...params) {
+function array(...params) {
   let arr = [];
-  for (i = x; i <= y; i++) {
+  for (i = firstNumber; i <= secondNumber; i++) {
     arr.push(i);
   }
   return arr;
 }
 
 function sum(...params) {
-  let sumOfArray = 0;
-  for (const iterator of Array()) {
-    sumOfArray += iterator;
+  let sumOfarray = 0;
+  for (const iterator of array()) {
+    sumOfarray += iterator;
   }
-  return sumOfArray;
+  return sumOfarray;
 }
 
 alert(sum());

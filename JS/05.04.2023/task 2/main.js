@@ -1,9 +1,9 @@
-let x = Number(prompt('Enter number'));
+let num = Number(prompt('Enter number'));
 
 function factorial(...params) {
-    if (x) {
+    if (num) {
         let arr = [];
-        for (let i = 1; i <= x; i++) {
+        for (let i = 1; i <= num; i++) {
             arr.push(i);
         }
         let multiply = 1;

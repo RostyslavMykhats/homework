@@ -1,16 +1,16 @@
-let x = Number(prompt('Enter first number'));
-let y = Number(prompt('Enter second number'));
+let firstNumber = Number(prompt('Enter first number'));
+let secondNumber = Number(prompt('Enter second number'));
 
 function comparisonOfNumbers(...params) {
-    if(x < y  && x && y) {
+    if(firstNumber < secondNumber  && firstNumber && secondNumber) {
         alert(1)
     }
 
-    else if (x > y && x && y) {
+    else if (firstNumber > secondNumber && firstNumber && secondNumber) {
         alert(-1)
     }
 
-    else if (x == y && x && y) {
+    else if (firstNumber == secondNumber && firstNumber && secondNumber) {
         alert(0);
     }
     else {
