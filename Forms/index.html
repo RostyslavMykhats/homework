@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="js-form">
+        <h1 class="form__title">Шукаєте роботу чи няню?</h1>
+        <div class="form__choice-btn">
+            <button class="btn-choise" id="form__choice-work">Шукаю роботу</button>
+            <button class="btn-choise" id="form__choice-nanny">Шукаю няню</button>
+        </div>
+        <div class="form__name-lastname">
+            <input type="text" class="input js-input " id="name" placeholder="name">
+            <input type="text" class="input js-input" id="lastname" placeholder="lastname">
+        </div>
+
+        <input type="email" class="input js-input js-input-mail" id="mail" placeholder="e-mail">
+
+        <div class="form__pass"><input type="password" class="input js-input js-input-pass" id="password" placeholder="password">
+            <button id="show-pass"><img src="Group.png" alt=""></button>
+        </div>
+
+        <div class="form__confirm-pass"> <input type="password" class="input js-input js-input-confirm" id="confirm-password" placeholder="Confirm password">
+        <button id="show-confirm-pass"><img src="Group.png" alt=""></button>
+        </div>
+
+        <div class="form__checkbox-conditional">
+            <input type="checkbox" class="input js-input js-checkbox" id="conditional">
+            <label for="conditional">Так, я розумію та погоджуюся з Умовами обслуговування,<br> включаючи <a
+                    href="#">Угоду користувача</a> та <a href="#">Політику конфіденційності</a> </label>
+        </div>
+
+        <button class="reg-btn" id="reg" type="submit">Зареєструватись</button>
+
+        <div class="form__ask-reg">
+            <span class="ask-reg-text">Вже зареєстровані?</span>
+            <a href="#">Увійти</a>
+        </div>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
