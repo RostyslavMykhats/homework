@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    form {
+        padding: 35px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 450px;
+        width: 700px;
+        background-color: #9fcdcd;
+        background-image: url(img/moon_flag.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: right -115px bottom -62px;
+        border-radius: 15px;
+        gap: 25px;
+
+        .form__title {
+            position: absolute;
+            top: 20px;
+            left: -40px;
+            width: 550px;
+            padding: 13px;
+            padding-left: 70px;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            background-color: #db6423;
+        }
+
+        input {
+            background-color: #aad2d2;
+            height: 50px;
+            width: 60%;
+            border: 0px solid #467170;
+            border-bottom: 1px solid;
+        }
+
+        label {
+            font-size: 16px;
+            color: #64868d;
+        }
+
+        ::placeholder {
+            text-indent: 10px;
+            font-size: 18px;
+            color: #83aaaa;
+        }
+
+        .form__row-inputs {
+            display: flex;
+            gap: 31px;
+            input {
+                width: 21%;
+            }
+        }
+
+        .form__label-row-inputs{
+            display: flex;
+            justify-content: space-between;
+            width: 53%;
+        }
+    }
+}
