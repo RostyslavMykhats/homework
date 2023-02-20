@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+main .inputs__title {
+  margin-bottom: 30px;
+}
+main .inputs input {
+  padding: 5px;
+  width: 200px;
+  height: 25px;
+  text-indent: 5px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+main .inputs__valid {
+  border: 1px solid rgb(5, 248, 45);
+  background-image: url(img/valid.png);
+}
+main .inputs__valid::-moz-placeholder {
+  color: rgb(5, 248, 45);
+}
+main .inputs__valid::placeholder {
+  color: rgb(5, 248, 45);
+}
+main .inputs__invalid {
+  position: relative;
+  border: 1px solid rgb(248, 5, 5);
+  background-image: url(img/invalid.png);
+}
+main .inputs__invalid::-moz-placeholder {
+  color: rgb(248, 5, 5);
+}
+main .inputs__invalid::placeholder {
+  color: rgb(248, 5, 5);
+}/*# sourceMappingURL=style.css.map */
