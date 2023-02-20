@@ -8,38 +8,36 @@ for (let button of buttons) {
     });
 };
 
-function validateBtn(...params) {
-    for (let button of buttons) {
-        if (button.classList.contains('active')){
-            return true;
-        }
-    }
+function hasActiveButton() {
+    return Array.from(buttons).some(button => button.classList.contains('active'));
 }
 
 // show pass
 
-let pass = document.getElementById('password');
-let showPass = document.getElementById('show-pass');
-showPass.addEventListener('click', function (show) {
-    show.preventDefault();
-    if (pass.getAttribute('type') === 'password') {
-        pass.setAttribute('type', 'text');
-    }
-    else {
-        pass.setAttribute('type', 'password');
-    }
-});
-let confirmPass = document.getElementById('confirm-password');
-let confirmShowPass = document.getElementById('show-confirm-pass');
-confirmShowPass.addEventListener('click', function (show) {
-    show.preventDefault();
-    if (confirmPass.getAttribute('type') === 'password') {
-        confirmPass.setAttribute('type', 'text');
-    }
-    else {
-        confirmPass.setAttribute('type', 'password');
-    }
-});
+function togglePasswordVisibility(inputElem, toggleElem) {
+    toggleElem.addEventListener('click', function (event) {
+        event.preventDefault();
+        inputElem.type = inputElem.type === 'password' ? 'text' : 'password';
+    });
+}
+togglePasswordVisibility(document.getElementById('password'), document.getElementById('show-pass'));
+togglePasswordVisibility(document.getElementById('confirm-password'), document.getElementById('show-confirm-pass'));
+
+function validatePassword(password) {
+    const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    return regex.test(password);
+}
+
+const errorMessage = document.querySelector('#error-message');
+
+function showError() {
+    errorMessage.textContent = `Введіть коректний пароль. Пароль повинен містити від 8 символів, включаючи як мінімум одну малу літеру, одну велику літеру і одну цифру. (Букви повинні бути латинські)`;
+}
+
+function clearError() {
+    errorMessage.textContent = '';
+}
+
 
 // valid form
 
@@ -48,68 +46,63 @@ let form = document.querySelector('.js-form'),
     formInputMail = document.querySelector('.js-input-mail'),
     formInputPass = document.querySelector('.js-input-pass'),
     formInputConfirm = document.querySelector('.js-input-confirm'),
-    formCheckbox = document.querySelector('.js-checkbox'),
     formInputName = document.getElementById('name'),
-    formInputLastname = document.getElementById('lastname');
+    formInputLastname = document.getElementById('lastname'),
+    formCheckbox = document.querySelector('.js-checkbox');
 
 function validateEmail(email) {
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
 form.onsubmit = function () {
-    let mailVal = formInputMail.value,
-        passVal = formInputPass.value,
-        confVal = formInputConfirm.value,
-        emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+    const mailVal = formInputMail.value.trim(),
+        passVal = formInputPass.value.trim(),
+        confVal = formInputConfirm.value.trim();
 
-    formInputs.forEach(function (input) {
-        if (input.value === '') {
-            input.classList.add('error');
-
-        }
-        else {
-            input.classList.remove('error');
-        }
-    });
-
-    if (emptyInputs.length !== 0) {
+    if (Array.from(formInputs).some(input => input.value.trim() === '')) {
+        formInputs.forEach(input => input.classList.toggle('error', input.value.trim() === ''));
         return false;
     }
 
-    if(!validateBtn()) {
-        alert('choise')
+    if (!hasActiveButton()) {
+        alert('Будь ласка виберіть, що ви шукаєте');
         return false;
     }
 
     if (!validateEmail(mailVal)) {
-        alert("Будь ласка введіть коректну почту")
+        alert("Будь ласка введіть коректну почту");
         formInputMail.classList.add('error');
         return false;
-    }
-
-    else {
+    } else {
         formInputMail.classList.remove('error');
     }
 
-    if (confVal != passVal) {
+    if (!validatePassword(passVal)) {
+        formInputPass.classList.add('error');
+        showError()
+        return false;
+    }
+
+    else {
+        clearError()
+        formInputPass.classList.remove('error');
+    }
+
+    if (confVal !== passVal) {
         formInputConfirm.classList.add('error');
         alert('Паролі не співпадають');
         return false;
-    }
-    else {
+    } else {
         formInputConfirm.classList.remove('error');
     }
 
     if (!formCheckbox.checked) {
-        reg = document.querySelector('.reg-btn').classList.add('activity');
-        alert('Погодьтесь на умови')
+        alert('Погодьтесь на умови');
         return false;
     }
 
-    else {
-        alert(`name : ${formInputName.value},  
+    alert(`name : ${formInputName.value},
 lastname : ${formInputLastname.value},
 e-mail : ${mailVal},
-password : ${passVal}`)
-    }
-}
+password : ${passVal}`);
+};

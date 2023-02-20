@@ -21,6 +21,7 @@ body {
         align-items: baseline;
         gap: 24px;
         padding: 40px;
+        max-width: 100%;
 
         .form__title {
             align-self: center;
@@ -162,9 +163,17 @@ body {
         .form__pass {
             position: relative;
 
+            #error-message {
+                padding-left: 5px;
+                color: red;
+                font-size: 10px;
+                width: 416px;
+            }
+
             #show-pass {
                 position: absolute;
-                top: 30%;
+                top: 50%;
+                transform: translateY(-50%);
                 right: 2%;
                 background: #ffffff00;
                 border: none;
@@ -177,7 +186,8 @@ body {
 
             #show-confirm-pass {
                 position: absolute;
-                top: 30%;
+                top: 50%;
+                transform: translateY(-50%);
                 right: 2%;
                 background: #ffffff00;
                 border: none;

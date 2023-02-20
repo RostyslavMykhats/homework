@@ -20,6 +20,7 @@ body form {
   align-items: baseline;
   gap: 24px;
   padding: 40px;
+  max-width: 100%;
 }
 body form .form__title {
   align-self: center;
@@ -152,9 +153,16 @@ body form a {
 body form .form__pass {
   position: relative;
 }
+body form .form__pass #error-message {
+  padding-left: 5px;
+  color: red;
+  font-size: 10px;
+  width: 416px;
+}
 body form .form__pass #show-pass {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   right: 2%;
   background: rgba(255, 255, 255, 0);
   border: none;
@@ -165,7 +173,8 @@ body form .form__confirm-pass {
 }
 body form .form__confirm-pass #show-confirm-pass {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   right: 2%;
   background: rgba(255, 255, 255, 0);
   border: none;
