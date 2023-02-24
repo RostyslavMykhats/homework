@@ -6,16 +6,17 @@
 }
 
 main {
-
+    font-family: "Roboto";
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 50px;
 
+    h2 {
+        margin-bottom: 30px;
+    }
+
     .inputs {
-        &__title {
-            margin-bottom: 30px;
-        }
 
         input {
             padding: 5px;
@@ -43,7 +44,92 @@ main {
         }
 
         &__invalid::placeholder {
-            color: rgb(248, 5, 5);;
+            color: rgb(248, 5, 5);
+            ;
+        }
+    }
+
+    .checkbox {
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 65px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            border: 1px solid green;
+            border-radius: 5px;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 30px;
+            left: 4px;
+            bottom: 4px;
+            background-color: green;
+            border-radius: 5px;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            border: 1px solid rgb(255, 14, 114);
+            background-color: #ffffff;
+        }
+
+        input:checked+.slider:before {
+            background-color: rgb(255, 14, 114);
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+    }
+
+    .radio {}
+
+    .buttons {
+        button {
+            border-radius: 20px;
+            font-family: "Roboto";
+            font-size: 20px;
+            font-weight: 500;
+            border: 0px solid;
+            width: 150px;
+            height: 60px;
+        }
+
+        .active:active {
+            background-color: rgb(8, 197, 8);
+        }
+        .hover:hover{
+            background-color: green;
+        }
+        .danger {
+            background-color: rgb(255, 5, 47);
+        }
+        .hover-red:hover{
+            background-color: red;
+        }
+        .disabled:disabled {
+            background-color: grey;
         }
     }
 }

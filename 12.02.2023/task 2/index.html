@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <section class="inputs">
@@ -15,7 +17,43 @@
             <input class="inputs__valid" type="text" placeholder="Valid text">
             <input class="inputs__invalid" type="text" placeholder="Invalid text">
         </section>
-        se
+        <section class="checkbox">
+            <h2 class="checkbox__title">Checkbox</h2>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <label for="switch">Subscribe</label>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+            <label for="switch">Subscribe</label>
+        </section>
+        <section class="radio">
+            <h2 class="radio__title">Radio buttons</h2>
+            <span>Gender:</span>
+            <input name="male" type="radio" checked>
+            <label for="male">Male</label>
+            <input name="female" type="radio">
+            <label for="female">Female</label>
+        </section>
+        <section class="buttons">
+            <h2 class="buttons__title">Buttons</h2>
+            <button type="button" class="active">Active</button>
+            <button type="button" class="hover">Hover</button>
+            <button type="button" class="danger">Danger</button>
+            <button type="button" class="hover-red">Hover</button>
+            <button type="button" class="disabled" disabled>Disabled</button>
+        </section>
+        <section class="area">
+            <h2>Text Area</h2>
+            <textarea rows="15" cols="100">
+                Enter some text...
+                </textarea>
+        </section>
     </main>
 </body>
+
 </html>

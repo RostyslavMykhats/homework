@@ -5,12 +5,13 @@
 }
 
 main {
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 50px;
 }
-main .inputs__title {
+main h2 {
   margin-bottom: 30px;
 }
 main .inputs input {
@@ -42,4 +43,70 @@ main .inputs__invalid::-moz-placeholder {
 }
 main .inputs__invalid::placeholder {
   color: rgb(248, 5, 5);
+}
+main .checkbox .switch {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 34px;
+}
+main .checkbox .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+main .checkbox .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border: 1px solid green;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+main .checkbox .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  background-color: green;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+main .checkbox input:checked + .slider {
+  border: 1px solid rgb(255, 14, 114);
+  background-color: #ffffff;
+}
+main .checkbox input:checked + .slider:before {
+  background-color: rgb(255, 14, 114);
+  transform: translateX(26px);
+}
+main .buttons button {
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  border: 0px solid;
+  width: 150px;
+  height: 60px;
+}
+main .buttons .active:active {
+  background-color: rgb(8, 197, 8);
+}
+main .buttons .hover:hover {
+  background-color: green;
+}
+main .buttons .danger {
+  background-color: rgb(255, 5, 47);
+}
+main .buttons .hover-red:hover {
+  background-color: red;
+}
+main .buttons .disabled:disabled {
+  background-color: grey;
 }/*# sourceMappingURL=style.css.map */
