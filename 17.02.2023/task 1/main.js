@@ -1,6 +1,10 @@
 const submit = document.getElementById('submit').addEventListener('click', () => {
     const num = parseFloat(document.querySelector('.number').value);
     const deg = parseInt(document.querySelector('.degree').value);
+    if (isNaN(num) || isNaN(deg)) {
+        alert('Please enter valid values for both fields');
+        return;
+    }
     function power(num, deg) {
         if (deg === 0) {
             return 1;
@@ -21,6 +25,32 @@ const submit = document.getElementById('submit').addEventListener('click', () =>
         TARGET.innerHTML = html;
     }
     renderElementsOnPage(numDone);
+});
+
+const submitDivider = document.getElementById('submit-divider').addEventListener('click', () => {
+    const numDivider = parseFloat(document.querySelector('.num-divider').value);
+    const divider = parseInt(document.querySelector('.deg-divider').value);
+    if (isNaN(numDivider) || isNaN(divider)) {
+        alert('Please enter valid values for both fields');
+        return;
+    }
+    function gcd(numDivider, divider) {
+        if (divider === 0) {
+            return numDivider;
+        } else {
+            return gcd(divider, numDivider % divider);
+        }
+    }
+    const numDividerDone = gcd(numDivider, divider);
+    function renderElementsOnPage(numDividerDone) {
+        let html = '';
+        html += `<div class="rend">
+        <h1 class="complit-numDividerber">${numDividerDone}</h1>
+        </div>`
+        const TARGET = document.querySelector('.result-divider');
+        TARGET.innerHTML = html;
+    }
+    renderElementsOnPage(numDividerDone);
 });
 
 
