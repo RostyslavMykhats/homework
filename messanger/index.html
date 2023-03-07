@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                    <div class="header__logo"><a href="#">SN</a></div>
+                </div>
+                <div class="col-8">
+                    <div class="header__sign-in d-none">SIGN-IN</div>
+                    <div class="header__user d-flex justify-content-end align-items-center gap-2 ">
+                        <a href="#"><img class="header__user_photo" src="img/av_64.png" alt="Luella Hubbard"></a>
+                        <p class="header__user_name d-flex align-items-center">Luella Hubbard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main d-flex gap-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="main__tabs">
+                        <ul class="main__nav">
+                            <li class="main__nav_item active" data-page="my_profile"><i
+                                    class="material-icons">assignment_ind</i> My Profile
+                            </li>
+                            <li class="main__nav_item"><i class="material-icons">assignment</i> News</li>
+                            <li class="main__nav_item" data-page="message"><i class="material-icons">email</i> Messages
+                            </li>
+                            <li class="main__nav_item"><i class="material-icons">face</i> Friends</li>
+                            <li class="main__nav_item" data-page="events"><i class="material-icons">event_available</i>
+                                Events</li>
+                            <li class="main__nav_item"><i class="material-icons">collections</i> Media</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="main__content">
+                        <div class="mains my-profile" data-page="my_profile">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="my-profile__block">
+                                        <div class="my-profile__block_photo">
+                                            <img src="img/av_256.png" alt="Luella Hubbard">
+                                            <div class="photo-edit">
+                                                <button id="edit-photo">EDIT</button>
+                                            </div>
+                                        </div>
+                                        <div class="my-profile__block_friends">
+                                            <p class="friends__title">Friends(245):</p>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                            <div class="friend">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <p>Hassan Tomplin</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="my-profile__block-right">
+                                        <div class="my-profile__block-right_about">
+                                            <div class="user-name">
+                                                <p style="font-size: 30px; font-weight: 300;">Luella Hubbard</p>
+                                            </div>
+                                            <div class="user-birthday">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <p>Birthday:</p>
+                                                        <p>City:</p>
+                                                    </div>
+                                                    <div class="col-8 ps-5">
+                                                        <p class="blue-text">August 13</p>
+                                                        <p class="blue-text">New Orleans</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-nav">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <p class="blue-text" style="font-size: 20px;">245</p>
+                                                        <p class="blue-text">friends</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="blue-text" style="font-size: 20px;">23</p>
+                                                        <p class="blue-text">events</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="blue-text" style="font-size: 20px;">456</p>
+                                                        <p class="blue-text">Media</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-profile__block-right_posts mt-4">
+                                            <div class="post">
+                                                <div
+                                                    class="post__user d-flex justify-content-start align-items-center gap-3">
+                                                    <img src="img/av_64.png" alt="">
+                                                    <div class="post__user_name">
+                                                        <p>Luella Hubbard</p>
+                                                        <p class="post__date" style="color: #c9c9c9 ; font-size: 12px;">
+                                                            1 Apr 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="post__content pt-4 pb-3">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Temporibus nam dolorem fugiat accusamus? Temporibus at explicabo
+                                                        nam minima! Fugit quis beatae iste eveniet unde ipsam, error
+                                                        dolores eius perferendis recusandae?Lorem ipsum dolor sit amet
+                                                        consectetur adipisicing elit. Aperiam, nemo. Commodi labore,
+                                                        perferendis ea quidem, sit neque adipisci minima error
+                                                        architecto natus laborum reiciendis ad dignissimos. Dignissimos
+                                                        impedit culpa fugit.</p>
+                                                </div>
+                                                <div class="post__feedback d-flex gap-3 pt-4 align-items-center">
+                                                    <p><i class="material-icons">favorite</i> 234</p>
+                                                    <p><i class="material-icons">chat</i> 234</p>
+                                                    <p><i class="material-icons">reply</i></p>
+                                                </div>
+                                            </div>
+                                            <div class="post mt-3">
+                                                <div
+                                                    class="post__user d-flex justify-content-start align-items-center gap-3">
+                                                    <img src="img/av_64.png" alt="">
+                                                    <div class="post__user_name">
+                                                        <p>Luella Hubbard</p>
+                                                        <p class="post__date" style="color: #c9c9c9 ; font-size: 12px;">
+                                                            1 Apr 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="post__content pt-4 pb-3">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Temporibus nam dolorem fugiat accusamus? Temporibus at explicabo
+                                                        nam minima! Fugit quis beatae iste eveniet unde ipsam, error
+                                                        dolores eius perferendis recusandae?Lorem ipsum dolor sit amet
+                                                        consectetur adipisicing elit. Aperiam, nemo. Commodi labore,
+                                                        perferendis ea quidem, sit neque adipisci minima error
+                                                        architecto natus laborum reiciendis ad dignissimos. Dignissimos
+                                                        impedit culpa fugit.</p>
+                                                </div>
+                                                <div class="post__feedback d-flex gap-3 pt-4 align-items-center">
+                                                    <p><i class="material-icons">favorite</i> 234</p>
+                                                    <p><i class="material-icons">chat</i> 234</p>
+                                                    <p><i class="material-icons">reply</i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mains events d-none" data-page="events">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p class="events__title ps-2" style="font-size: 25px;">EVENTS</p>
+                                </div>
+                                <div class="col-8">
+                                    <div class="events__search d-flex justify-content-end gap-2 pe-2">
+                                        <input id="events-search" type="text" placeholder="Search">
+                                        <button id="submit-search"><i class="material-icons">search</i></button>
+                                        <button id="add-event"><i class="material-icons">add</i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="events__card">
+                                    <div class="event">
+                                        <img class="event__img" src="img/event1.png" alt="">
+                                        <div class="event__content">
+                                            <div class="event__content_date d-flex gap-4">
+                                                <p><i class="material-icons">query_builder</i>10:00 AM</p>
+                                                <p><i class="material-icons">insert_invitation</i>September 14, 2019</p>
+                                                <p><i class="material-icons">location_on</i>New Orleans</p>
+                                            </div>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+                                                obcaecati quidem ut, numquam, officiis totam rerum veniam voluptate odio
+                                                a alias vel provident illum omnis debitis vero accusamus rem harum.</p>
+                                        </div>
+                                        <div class="event__btn">
+                                            <a href="#">DETAILS</a>
+                                        </div>
+                                    </div>
+                                    <div class="event"></div>
+                                    <div class="event"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="events__card">
+                                    <div class="event">
+                                        <img class="event__img" src="img/event2.png" alt="">
+                                        <div class="event__content">
+                                            <div class="event__content_date d-flex gap-4">
+                                                <p><i class="material-icons">query_builder</i>10:00 AM</p>
+                                                <p><i class="material-icons">insert_invitation</i>September 14, 2019</p>
+                                                <p><i class="material-icons">location_on</i>New Orleans</p>
+                                            </div>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+                                                obcaecati quidem ut, numquam, officiis totam rerum veniam voluptate odio
+                                                a alias vel provident illum omnis debitis vero accusamus rem harum.</p>
+                                        </div>
+                                        <div class="event__btn">
+                                            <a href="#">DETAILS</a>
+                                        </div>
+                                    </div>
+                                    <div class="event"></div>
+                                    <div class="event"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="events__card">
+                                    <div class="event">
+                                        <img class="event__img" src="img/event3.png" alt="">
+                                        <div class="event__content">
+                                            <div class="event__content_date d-flex gap-4">
+                                                <p><i class="material-icons">query_builder</i>10:00 AM</p>
+                                                <p><i class="material-icons">insert_invitation</i>September 14, 2019</p>
+                                                <p><i class="material-icons">location_on</i>New Orleans</p>
+                                            </div>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+                                                obcaecati quidem ut, numquam, officiis totam rerum veniam voluptate odio
+                                                a alias vel provident illum omnis debitis vero accusamus rem harum.</p>
+                                        </div>
+                                        <div class="event__btn">
+                                            <a href="#">DETAILS</a>
+                                        </div>
+                                    </div>
+                                    <div class="event"></div>
+                                    <div class="event"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mains message d-none" data-page="message">
+                            <div class="row justify-content-start">
+                                <div class="col-4">
+                                    <ul class="nav-message">
+                                        <li class="nav-message_user selected" data-user="adam">
+                                            <img src="img/avatar_3.png" alt="">
+                                            <div class="name-message">
+                                                <p class="name-user">Adam John</p>
+                                                <p class="message-user">Lorem ipsum dolor, sit amet consectetur</p>
+                                            </div>
+                                        </li>
+                                        <li class="nav-message_user" data-user="elva">
+                                            <img src="img/avatar_3.png" alt="">
+                                            <div class="name-message">
+                                                <p class="name-user">Adam John</p>
+                                                <p class="message-user">Lorem ipsum dolor, sit amet consectetur</p>
+                                            </div>
+                                        </li>
+                                        <li class="nav-message_user" data-user="ivan">
+                                            <img src="img/avatar_3.png" alt="">
+                                            <div class="name-message">
+                                                <p class="name-user">Adam John</p>
+                                                <p class="message-user">Lorem ipsum dolor, sit amet consectetur</p>
+                                            </div>
+                                        </li>
+                                        <li class="nav-message_user" data-user="nika">
+                                            <img src="img/avatar_3.png" alt="">
+                                            <div class="name-message">
+                                                <p class="name-user">Adam John</p>
+                                                <p class="message-user">Lorem ipsum dolor, sit amet consectetur</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-8">
+                                    <div class="messages-selected-user" data-user="adam">
+                                        <div class="chat">
+                                            <div class="message-user-1">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                            </div>
+                                            <div class="message-user-1">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                                <img src="img/av_64.png" alt="">
+                                            </div>
+                                            <div class="message-user-1">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                            </div>
+                                            <div class="message-user-1">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                                <img src="img/av_64.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="send-message d-flex gap-3">
+                                            <input id="message" type="text" placeholder="message">
+                                            <button id="send-message"><i class="material-icons">send</i></button>
+                                        </div>
+                                    </div>
+                                    <div class="messages-selected-user d-none" data-user="ivan">
+                                        <div class="chat">
+                                            <div class="message-user-1">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                            </div>
+                                            <div class="message-user-1">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                                <img src="img/av_64.png" alt="">
+                                            </div>
+                                            <div class="message-user-1">
+                                                <img src="img/avatar_3.png" alt="">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                            </div>
+                                            <div class="message-user-1">
+                                                <div class="chat__message">
+                                                    <p><strong>Pravan Tiyle</strong> 12:45:34</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                        exercitationem ullam a similique ipsa vero impedit expedita</p>
+                                                </div>
+                                                <img src="img/av_64.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="send-message d-flex gap-3">
+                                            <input id="message" type="text" placeholder="message">
+                                            <button id="send-message"><i class="material-icons">send</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* p {
+  margin-bottom: 0px;
+}
+
+body {
+  font-family: "Roboto Mono";
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  background-color: #006BB2;
+  color: #fff;
+}
+.header__logo {
+  font-size: 30px;
+}
+.header__logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.header__user {
+  cursor: pointer;
+  color: #fff;
+}
+
+.main__nav {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.main__nav_item {
+  cursor: pointer;
+  display: flex;
+  list-style-type: none;
+  white-space: nowrap;
+  padding-left: 10px;
+  height: 35px;
+  width: 152px;
+  color: #0088C8;
+  align-items: center;
+  gap: 5px;
+}
+.main__nav_item.active {
+  background-color: #E5F5FE;
+}
+.main .my-profile__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.main .my-profile__block_photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 7px 0px #adadad;
+}
+.main .my-profile__block_photo .photo-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(201, 201, 201, 0.3098039216);
+  text-align: center;
+  width: 300px;
+  height: 70px;
+}
+.main .my-profile__block_photo .photo-edit button {
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: #8CD9FC;
+}
+.main .my-profile__block_friends {
+  box-shadow: 0px 0px 7px 0px #adadad;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.3fr repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  text-align: center;
+  padding-top: 25px;
+  padding: 15px;
+}
+.main .my-profile__block_friends :first-child {
+  text-align: start;
+  grid-area: 1/1/2/4;
+}
+.main .my-profile__block-right_about {
+  box-shadow: 0px 0px 7px 0px #adadad;
+  padding: 30px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main .my-profile__block-right_about .user-name {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.3098039216);
+}
+.main .my-profile__block-right_about .user-birthday {
+  width: 100%;
+  margin: 30px 0;
+  padding-bottom: 20px;
+  color: #c9c9c9;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.3098039216);
+}
+.main .my-profile__block-right_about .user-nav {
+  width: 100%;
+}
+.main .my-profile__block-right_about .user-nav .col-4 {
+  text-align: center;
+}
+.main .my-profile__block-right_about .blue-text {
+  color: #0088C8;
+}
+.main .my-profile__block-right_posts .post {
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0px 0px 7px 0px #adadad;
+}
+.main .my-profile__block-right_posts .post__feedback {
+  border-top: 1px solid rgba(201, 201, 201, 0.3098039216);
+  color: orange;
+}
+.main .my-profile__block-right_posts .post__feedback p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main .events #events-search {
+  text-indent: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  width: 250px;
+}
+.main .events button {
+  background-color: #006BB2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}
+.main .events .event {
+  box-shadow: 0px 0px 7px 0px #adadad;
+}
+.main .events .event img {
+  width: 100%;
+}
+.main .events .event__content {
+  padding: 20px;
+  border-bottom: 1px solid #c9c9c9;
+}
+.main .events .event__content p {
+  margin-top: 10px;
+}
+.main .events .event__content_date p {
+  color: #adadad;
+  display: flex;
+  align-items: center;
+}
+.main .events .event__btn {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+.main .events .event__btn a {
+  text-decoration: none;
+  color: #006BB2;
+  font-weight: 600;
+}
+.main .events .events__card {
+  margin-top: 20px;
+}
+.main input {
+  text-indent: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+.main .message {
+  height: 70vh;
+  box-shadow: 0px 0px 7px 0px #adadad;
+}
+.main .message .row {
+  height: 100%;
+}
+.main .message .nav-message {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  height: 100%;
+  border-right: 1px solid #adadad;
+}
+.main .message .nav-message li {
+  cursor: pointer;
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  list-style-type: none;
+  border: 1px solid #adadad;
+  border-right: none;
+  align-items: center;
+}
+.main .message .nav-message li img {
+  margin-right: 5px;
+  -o-object-fit: none;
+     object-fit: none;
+  align-self: flex-start;
+}
+.main .message .nav-message li .name-user {
+  font-weight: 600;
+}
+.main .message .nav-message li .message-user {
+  font-size: 14px;
+}
+.main .message .nav-message li.selected {
+  background-color: #8CD9FC;
+}
+.main .message .messages-selected-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+.main .message .messages-selected-user .send-message {
+  width: 100%;
+}
+.main .message .messages-selected-user .send-message input {
+  width: 90%;
+}
+.main .message .messages-selected-user .send-message button {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #006BB2;
+  border-radius: 50px;
+  border: none;
+}
+.main .message .messages-selected-user .chat .message-user-1 {
+  margin-bottom: 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.main .message .messages-selected-user .chat .message-user-1 img {
+  margin-right: 20px;
+  -o-object-fit: none;
+     object-fit: none;
+}/*# sourceMappingURL=style.css.map */
