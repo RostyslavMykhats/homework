@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: rgb(90, 90, 90);
+}
+
+.block {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    transition: opacity 0.3s;
+
+    &__text {
+        height: 100%;
+        width: 50%;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(221, 218, 218);
+    }
+
+    &__img {
+        overflow: hidden;
+        height: 100%;
+        width: 50%;
+
+
+        img {
+            transition: transform 1s;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.block:hover {
+    .block__img {
+        img {
+            transform: scale(1.10);
+        }
+    }
+    opacity: 0.5;
+}
