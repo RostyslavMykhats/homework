@@ -44,11 +44,11 @@ body .zoom .block:hover {
 body .zoom .block:hover .block__img img {
   transform: scale(1.1);
 }
-body #watch {
+body .watch {
   font-size: 1em;
   position: relative;
 }
-body #watch .frame-face {
+body .watch .frame-face {
   position: relative;
   width: 30em;
   height: 30em;
@@ -61,7 +61,7 @@ body #watch .frame-face {
     transform: rotate(335deg);
   }
 }
-body #watch .hours-hand {
+body .watch .hours-hand {
   width: 0.8em;
   height: 9em;
   border-radius: 0.9em;
@@ -80,7 +80,7 @@ body #watch .hours-hand {
     transform: rotate(422deg);
   }
 }
-body #watch .minutes-hand {
+body .watch .minutes-hand {
   width: 0.8em;
   height: 12.5em;
   border-radius: 0.5em;
@@ -94,7 +94,7 @@ body #watch .minutes-hand {
   transform: rotate(62deg);
   animation: minutes 10s linear 0s infinite;
 }
-body #watch .center {
+body .watch .center {
   left: 49%;
   position: absolute;
   width: 31px;
@@ -102,4 +102,17 @@ body #watch .center {
   border-radius: 30px;
   background-color: #343536;
   top: 45%;
+}
+body .door {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50vh;
+}
+body .door :nth-child(n) {
+  border: 7px solid rgb(175, 48, 2);
+  width: 30%;
+  height: 80%;
+  background-color: orangered;
 }/*# sourceMappingURL=style.css.map */

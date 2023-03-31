@@ -54,7 +54,7 @@ body {
         }
     }
 
-    #watch {
+    .watch {
         font-size: 1em;
         position: relative;
 
@@ -117,6 +117,21 @@ body {
             border-radius: 30px;
             background-color: #343536;
             top: 45%;
+        }
+    }
+
+    .door {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        height: 50vh;
+
+        :nth-child(n) {
+            border: 7px solid rgb(175, 48, 2);
+            width: 30%;
+            height: 80%;
+            background-color: orangered;
         }
     }
 }
