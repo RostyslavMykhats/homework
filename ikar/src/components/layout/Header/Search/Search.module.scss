@@ -1,0 +1,21 @@
+.search {
+    position: relative;
+}
+
+#search {
+    background: #EBEBEB;
+    border-radius: 2px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    text-indent: 5px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background: url(./coolicon.png) no-repeat;
+    background-size: contain;
+}

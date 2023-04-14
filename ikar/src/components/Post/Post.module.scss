@@ -1,0 +1,58 @@
+.post {
+    
+    display: flex;
+    background-color: #2A3A9D;
+    color: #fff;
+    margin-bottom: 30px;
+    max-height: 250px;
+    justify-content: space-between;
+    &__img {
+        height: 250px;
+        width: 40%;
+        background-image: url(./post.png);
+        background-size: cover;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        width: 60%;
+        h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__link {
+        cursor: pointer;
+        font-size: 12px;
+        align-self: flex-end;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        display: flex;
+
+        img {
+            padding-left: 5px;
+            object-fit: contain;
+        }
+    }
+
+    &__link:hover {
+        color: #fff;
+
+        img {
+            transform: translateX(5px);
+            transition: all 0.5s ease;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.hero {
+    margin: 10px 0;
+
+    &__bg {
+        width: 90%;
+        height: 576px;
+        background: url(./bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    &__content {
+        padding: 20px 30px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        color: #2A3A9D;
+    }
+
+    &__text {
+        margin: 10px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #A2A2A2
+    }
+
+    &__btn {
+        margin-left: 40px ;
+        border: none;
+        background-color: #2A3A9D;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 190px;
+        height: 39px;
+    }
+
+    &__btn:hover {
+        img {
+            transform: translateX(5px);
+            transition: all 0.5s ease;
+        }
+    }
+}
